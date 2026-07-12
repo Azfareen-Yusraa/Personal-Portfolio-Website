@@ -325,6 +325,38 @@ nav ul li a:hover{
 }
 
 /* =========================================
+   SKILLS SECTION
+========================================= */
+
+#skills{
+    background:#F8FAFC;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+    gap:25px;
+    margin-top:50px;
+}
+
+.skill-card{
+    background:#FFFFFF;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    font-size:20px;
+    font-weight:600;
+    color:#0F172A;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.3s ease;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px) scale(1.03);
+    color:#2563EB;
+    box-shadow:0 20px 40px rgba(37,99,235,0.18);
+}
+/* =========================================
    FIXED NAVBAR OFFSET
 ========================================= */
 
