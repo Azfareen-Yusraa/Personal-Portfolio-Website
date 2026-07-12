@@ -19,26 +19,33 @@
 
         <nav class="container">
 
-            <h2 class="logo">Yusraa Azfareen</h2>
+    <h2 class="logo">Yusraa Azfareen</h2>
 
-            <ul>
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
 
-                <li><a href="#home">Home</a></li>
+    <ul id="nav-links">
 
-                <li><a href="#about">About</a></li>
+        <li><a href="#home">Home</a></li>
 
-                <li><a href="#education">Education</a></li>
+        <li><a href="#about">About</a></li>
 
-                <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
 
-                <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
 
-                <li><a href="#contact">Contact</a></li>
+        <li><a href="#experience">Experience</a></li>
 
-            </ul>
+        <li><a href="#projects">Projects</a></li>
 
-        </nav>
+        <li><a href="#certifications">Certifications</a></li>
 
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
     </header>
 
     <!-- ==========================
@@ -353,75 +360,115 @@
          CERTIFICATIONS
     =========================== -->
 
-    <section id="certifications">
+   <section id="certifications">
 
-        <div class="container">
+    <div class="container">
 
-            <div class="section-title">
+        <div class="section-title">
+            <h2>Certifications</h2>
+            <p>Courses and certifications I've completed</p>
+        </div>
 
-                <h2>Certifications</h2>
+        <div class="certifications-grid">
 
+            <div class="certificate-card">
+                <h3>Java Programming</h3>
+                <p>Besant Technologies</p>
             </div>
 
-            <ul class="certification-list">
+            <div class="certificate-card">
+                <h3>Data Analytics</h3>
+                <p>Simplilearn</p>
+            </div>
 
-                <li>Java Programming – Besant Technologies</li>
-
-                <li>Data Analytics – Simplilearn</li>
-
-                <li>Digital Productivity – NIIT Foundation</li>
-
-            </ul>
+            <div class="certificate-card">
+                <h3>Digital Productivity</h3>
+                <p>NIIT Foundation</p>
+            </div>
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
     <!-- ==========================
          CONTACT
     =========================== -->
+<section id="contact">
 
-    <section id="contact">
+    <div class="container">
 
-        <div class="container">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+            <p>Let's connect and work together</p>
+        </div>
 
-            <div class="section-title">
+        <div class="contact-container">
 
-                <h2>Contact Me</h2>
+            <!-- Contact Details -->
+            <div class="contact-info">
 
-            </div>
-
-            <div class="contact-content">
-
-                <div class="contact-info">
-
-                    <p><strong>Email:</strong> azfareenyu@gmail.com</p>
-
-                    <p><strong>Phone:</strong> +91 9963381780</p>
-
+                <div class="contact-card">
+                    <h3>Email</h3>
                     <p>
-                        <strong>GitHub:</strong>
+                        <a href="mailto:azfareenyu@gmail.com">
+                            azfareenyu@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>Phone</h3>
+                    <p>
+                        <a href="tel:+919963381780">
+                            +91 9963381780
+                        </a>
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <h3>GitHub</h3>
+                    <p>
                         <a href="https://github.com/Azfareen-Yusraa" target="_blank">
                             github.com/Azfareen-Yusraa
                         </a>
                     </p>
+                </div>
 
+                <div class="contact-card">
+                    <h3>LinkedIn</h3>
                     <p>
-                        <strong>LinkedIn:</strong>
                         <a href="https://www.linkedin.com/in/yusraa-azfareen" target="_blank">
                             linkedin.com/in/yusraa-azfareen
                         </a>
                     </p>
-
                 </div>
+
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
 
                 <form>
 
-                    <input type="text" placeholder="Your Name" required>
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        required
+                    >
 
-                    <input type="email" placeholder="Your Email" required>
+                    <input
+                        type="email"
+                        placeholder="Your Email"
+                        required
+                    >
 
-                    <textarea rows="6" placeholder="Your Message"></textarea>
+                    <textarea
+                        rows="6"
+                        placeholder="Your Message"
+                        required
+                    ></textarea>
 
                     <button class="btn" type="submit">
                         Send Message
@@ -433,23 +480,43 @@
 
         </div>
 
-    </section>
+    </div>
+
+</section>
 
     <!-- ==========================
          FOOTER
     =========================== -->
 
-    <footer>
+  <footer>
 
-        <div class="container">
+    <div class="container footer-content">
 
-            <p>
-                © 2026 Yusraa Azfareen. All Rights Reserved.
-            </p>
+        <h2>Yusraa Azfareen</h2>
+
+        <p>
+            Aspiring Software Developer passionate about building modern web applications.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#home">Home</a>
+
+            <a href="#about">About</a>
+
+            <a href="#projects">Projects</a>
+
+            <a href="#contact">Contact</a>
 
         </div>
 
-    </footer>
+        <p class="copyright">
+            © 2026 Yusraa Azfareen. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
 
     <script src="script.js"></script>
 

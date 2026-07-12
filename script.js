@@ -1,29 +1,46 @@
-const links = document.querySelectorAll("nav a");
+// ==========================
+// Mobile Menu
+// ==========================
 
-links.forEach(link=>{
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
 
-link.addEventListener("click",function(e){
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+});
 
-e.preventDefault();
 
-document.querySelector(this.getAttribute("href"))
+// ==========================
+// Smooth Scrolling
+// ==========================
 
-.scrollIntoView({
+const links = document.querySelectorAll("#nav-links a");
 
-behavior:"smooth"
+links.forEach(link => {
+
+    link.addEventListener("click", function(e) {
+
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+
+        navLinks.classList.remove("active");
+
+    });
 
 });
 
-});
 
-});
+// ==========================
+// Contact Form
+// ==========================
 
-document.querySelector("form")
+document.querySelector("form").addEventListener("submit", function(e){
 
-.addEventListener("submit",function(e){
+    e.preventDefault();
 
-e.preventDefault();
-
-alert("Thank you! Message sent.");
+    alert("Thank you! Message sent.");
 
 });
