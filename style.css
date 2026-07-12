@@ -107,6 +107,26 @@ nav ul li a{
 nav ul li a:hover{
     color:#60A5FA;
 }
+
+nav ul li a.active{
+    color:#60A5FA;
+    font-weight:600;
+}
+
+nav ul li a::after{
+    content:"";
+    display:block;
+    width:0;
+    height:2px;
+    background:#60A5FA;
+    transition:.3s;
+    margin-top:5px;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after{
+    width:100%;
+}
 /* =========================================
    HERO SECTION
 ========================================= */
@@ -758,6 +778,36 @@ nav ul.active{
 
     .hero-image img{
         max-width:220px;
+    }
+
+}
+/* =========================================
+   SCROLL ANIMATION
+========================================= */
+
+.hidden{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all 0.8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+/* =========================================
+   TYPING ANIMATION
+========================================= */
+
+#typing::after{
+    content:"|";
+    animation:blink .7s infinite;
+}
+
+@keyframes blink{
+
+    50%{
+        opacity:0;
     }
 
 }
